@@ -10,6 +10,8 @@ export const CtaWrapper = styled(motion.section)`
   gap: 40px;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid ${({ theme }) => theme.color.primary};
+  border-bottom: 1px solid ${({ theme }) => theme.color.primary};
 `;
 
 export const CtaText = styled.p`

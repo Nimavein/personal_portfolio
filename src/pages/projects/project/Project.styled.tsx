@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const ProjectWrapper = styled(motion.div)`
   width: 100%;
-  box-shadow: 3px 4px 16px rgba(0, 0, 0, 0.21);
+  box-shadow: ${({ theme }) => theme.color.boxShadow};
   position: relative;
 `;
 

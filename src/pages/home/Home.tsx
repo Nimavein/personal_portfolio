@@ -10,6 +10,7 @@ export const Home = () => {
     <>
       <ParticlesBackground />
       <S.Wrapper
+        id="Home"
         variants={fadeIn}
         initial="hidden"
         animate="visible"

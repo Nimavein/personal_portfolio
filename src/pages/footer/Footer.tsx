@@ -18,6 +18,7 @@ export const Footer = () => {
   }
   return (
     <S.FooterWrapper
+      id="Footer"
       ref={ref}
       initial={{
         opacity: 0,

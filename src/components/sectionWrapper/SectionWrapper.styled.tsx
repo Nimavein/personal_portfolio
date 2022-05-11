@@ -11,7 +11,9 @@ export const PageWrapper = styled(motion.section)<{
   justify-content: center;
   width: 100%;
   color: ${({ $textColor, theme }) => $textColor || theme.color.black};
-  background-color: ${({ $backgroundColor }) => $backgroundColor};
+  background-color: ${({ $backgroundColor, theme }) =>
+    $backgroundColor || theme.color.greyLight};
+  border-top: 1px solid ${({ theme }) => theme.color.primary};
   @media ${({ theme }) => theme.medias.mobile} {
     padding: 40px 20px;
   }
