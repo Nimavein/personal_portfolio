@@ -97,6 +97,10 @@ export const ExperienceWrapper = styled(DescriptionWrapper)`
     background: ${({ theme }) => theme.color.darkGrey};
     color: ${({ theme }) => theme.color.white};
     padding: 20px 0;
+    .ant-tabs-ink-bar {
+      background: ${({ theme }) => theme.color.secondary};
+    }
+
     .ant-tabs-tab {
       font-weight: 600;
     }
