@@ -4,9 +4,7 @@ import { Description } from "./description/Description";
 import { Experience } from "./experience/Experience";
 import { Skills } from "./skills/Skills";
 
-type AboutProps = {};
-
-export const About = ({}: AboutProps) => {
+export const About = () => {
   return (
     <SectionWrapper title="About">
       <S.SectionsWrapper>
