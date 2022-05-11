@@ -1,15 +1,15 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, HTMLAttributes } from "react";
 import { Button as StyledButton } from "./Button.styled";
 
-interface ButtonProps {
+type ButtonProps = {
   children?: ReactNode;
   isBlack?: boolean;
-  onClick?: () => void;
-}
+  type: "button" | "submit" | "reset" | undefined;
+} & HTMLAttributes<HTMLButtonElement>;
 
-export const Button: React.FC<ButtonProps> = ({ children, isBlack }) => {
+export const Button: React.FC<ButtonProps> = ({ children, isBlack, type }) => {
   return (
-    <StyledButton $isBlack={isBlack}>
+    <StyledButton type={type} $isBlack={isBlack}>
       {children}
       <div className="top-bar"></div>
       <div className="bot-bar"></div>

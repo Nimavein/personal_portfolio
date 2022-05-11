@@ -1,4 +1,5 @@
 import { AnimatePresence } from "framer-motion";
+import { ToastContainer } from "react-toastify";
 import { CtaSection } from "./components/ctaSection/CtaSection";
 import { About } from "./pages/about/About";
 import { Contact } from "./pages/contact/Contact";
@@ -7,9 +8,9 @@ import { Home } from "./pages/home/Home";
 import { Projects } from "./pages/projects/Projects";
 
 export const App = () => {
-  
   return (
     <AnimatePresence exitBeforeEnter>
+      <ToastContainer />
       <Home key="home" />
       <About key="about" />
       <CtaSection key="cta" />

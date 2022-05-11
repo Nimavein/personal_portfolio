@@ -18,7 +18,7 @@ export const Home = () => {
           Hello, I'm <S.Name>Michał Żygiel</S.Name>.
         </S.IntroductionText>
         <S.IntroductionText>I'm a Frontend Developer.</S.IntroductionText>
-        <Button>DOWNLOAD CV</Button>
+        <Button type="button">DOWNLOAD CV</Button>
         <S.Link to="About" spy={true} smooth={true}>
           <S.ScrollDownButton
             whileHover={{

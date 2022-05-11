@@ -13,7 +13,7 @@ export const CtaSection = () => {
       opacity: 1,
       transition: {
         delay: 0.4,
-        duration: 1
+        duration: 1,
       },
     });
   }
@@ -28,7 +28,7 @@ export const CtaSection = () => {
     >
       <S.CtaText>Do you want to talk about ...</S.CtaText>
       <Link to="Contact" spy={true} smooth={true}>
-        <Button>Contact me!</Button>
+        <Button type="button">Contact me!</Button>
       </Link>
     </S.CtaWrapper>
   );

@@ -42,7 +42,7 @@ export const LinksWrapper = styled(motion.div)`
   gap: 20px;
 `;
 
-export const LinkWrapper = styled(motion.a)`
+export const LinkWrapper = styled.a`
   align-self: center;
   width: fit-content;
 `;
@@ -55,6 +55,5 @@ export const TitlePressWrapper = styled(TitleWrapper)`
 export const LinksPressWrapper = styled(LinksWrapper)`
   height: 50%;
   opacity: 0.9;
-  z-index: 20;
 `;
 export const LinkPressWrapper = styled(LinkWrapper)``;

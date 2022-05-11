@@ -21,7 +21,7 @@ export const projects: ProjectType[] = [
   {
     name: "Portfolio",
     imgUrl: "/portfolio.png",
-    siteLink: "https://master-program-ikss-a.vercel.app/",
+    siteLink: "https://main--gregarious-chebakia-eb84f9.netlify.app/",
     githubLink: "https://github.com/masterborn/master-program-ikss-a",
   },
   {

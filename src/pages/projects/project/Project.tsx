@@ -44,10 +44,10 @@ export const Project = ({
           <S.TitlePressWrapper onTap={onTap}>{name}</S.TitlePressWrapper>
           <S.LinksPressWrapper>
             <S.LinkPressWrapper target="_blank" href={siteLink}>
-              <Button>LIVE</Button>
+              <Button type="button">LIVE</Button>
             </S.LinkPressWrapper>
             <S.LinkPressWrapper target="_blank" href={githubLink}>
-              <Button>CODE</Button>
+              <Button type="button">CODE</Button>
             </S.LinkPressWrapper>
           </S.LinksPressWrapper>
         </>
@@ -56,16 +56,18 @@ export const Project = ({
           <S.TitleWrapper variants={slashMotion}>{name}</S.TitleWrapper>
           <S.LinksWrapper variants={slashMotion}>
             <S.LinkWrapper target="_blank" href={siteLink}>
-              <Button onClick={onClick}>LIVE</Button>
+              <Button type="button" onClick={onClick}>
+                LIVE
+              </Button>
             </S.LinkWrapper>
             <S.LinkWrapper target="_blank" href={githubLink}>
-              <Button>CODE</Button>
+              <Button type="button">CODE</Button>
             </S.LinkWrapper>
           </S.LinksWrapper>
         </>
       )}
 
-      <S.ProjectImage onTap={onTap} src={imgUrl} alt={name}></S.ProjectImage>
+      <S.ProjectImage onTap={onTap} src={imgUrl} alt={name} />
     </S.ProjectWrapper>
   );
 };
