@@ -4,9 +4,7 @@ import { ParticlesBackground } from "../../components/particlesBackground/Partic
 import { fadeIn } from "../../utils/animationsVariants";
 import * as S from "./Home.styled";
 
-type HomeProps = {};
-
-export const Home = ({}: HomeProps) => {
+export const Home = () => {
   return (
     <>
       <ParticlesBackground />

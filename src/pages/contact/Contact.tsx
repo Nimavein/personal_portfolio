@@ -1,12 +1,15 @@
-import { SectionWrapper } from '../../components/sectionWrapper/SectionWrapper'
-import { theme } from '../../style'
-import * as S from "./Contact.styled"
+import { SectionWrapper } from "../../components/sectionWrapper/SectionWrapper";
+import { theme } from "../../style";
+import * as S from "./Contact.styled";
 
-type ContactProps = {
-}
-
-export const Contact = ({}: ContactProps) => {
+export const Contact = () => {
   return (
-    <SectionWrapper backgroundColor={theme.color.darkGrey} textColor={theme.color.white} title='Contact'>Contact</SectionWrapper>
-  )
-}
+    <SectionWrapper
+      backgroundColor={theme.color.darkGrey}
+      textColor={theme.color.white}
+      title="Contact"
+    >
+      <S.ContactWrapper>Contact</S.ContactWrapper>
+    </SectionWrapper>
+  );
+};

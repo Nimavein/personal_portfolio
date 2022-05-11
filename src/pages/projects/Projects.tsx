@@ -5,9 +5,7 @@ import { projects, ProjectType } from "../../helpers/projects";
 import { Project } from "./project/Project";
 import { Button } from "../../components/button/Button";
 
-type ProjectsProps = {};
-
-export const Projects = ({}: ProjectsProps) => {
+export const Projects = () => {
   return (
     <SectionWrapper backgroundColor={theme.color.greyLight} title="Projects">
       <S.ProjectsWrapper>
