@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { Button } from "../../components/button/Button";
 import { MailOutlined, PhoneOutlined } from "@ant-design/icons";
 import { SocialMedias } from "../../components/socialMedias/SocialMedias";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 type FormDataType = {
   name: string;
@@ -27,9 +29,19 @@ export const Contact = () => {
     };
   }, [isSubmitSuccessful]);
 
-  const onSubmit = (data: FormDataType) => {
-    setIsSubmitSuccessful(true);
-    reset();
+  const onSubmit = async (data: FormDataType) => {
+    try {
+      await axios.post("https://formcarry.com/s/EdpXmCxaz8A", {
+        name: data.name,
+        email: data.email,
+        message: data.message,
+      });
+      toast.success("You have successfully send a message!");
+      setIsSubmitSuccessful(true);
+      reset();
+    } catch (e: any) {
+      toast.error(e);
+    }
   };
 
   return (
