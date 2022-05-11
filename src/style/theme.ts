@@ -10,7 +10,8 @@ const color = {
   primary: "#e31b6d",
   secondary: "#04c2c9",
   white: "#FFFFFF",
-  darkGrey: "#252934"
+  darkGrey: "#252934",
+  darkBlue: "#0f121a"
 };
 
 const medias = {

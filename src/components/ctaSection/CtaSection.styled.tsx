@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const CtaWrapper = styled.section`
+export const CtaWrapper = styled(motion.section)`
   width: 100%;
   background-color: ${({ theme }) => theme.color.darkGrey};
   padding: 60px 0;

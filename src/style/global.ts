@@ -36,10 +36,15 @@ const GlobalStyle = createGlobalStyle`
     display: block;
   }
 
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1;
     min-height: 100vh;
+    max-width: 100vw;
   }
 
   ol, ul {

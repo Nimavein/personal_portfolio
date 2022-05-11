@@ -5,7 +5,6 @@ export const PageWrapper = styled(motion.section)<{
   $backgroundColor?: string;
   $textColor?: string;
 }>`
-  max-width: 1782px;
   margin: 0 auto;
   padding: 40px;
   display: flex;
@@ -37,5 +36,5 @@ export const Separator = styled.hr<{ $textColor?: string }>`
   width: 50px;
   border: 2px solid
     ${({ $textColor, theme }) => $textColor || theme.color.black};
-  margin: 0 auto 20px auto;
+  margin: 0 auto 36px auto;
 `;
