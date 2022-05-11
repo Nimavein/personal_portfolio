@@ -14,7 +14,17 @@ export const SocialMedias = ({ displayTitle }: SocialMediasProps) => {
       <S.SocialMediaIconsWrapper>
         {socialMedias.map((social: MediaType) => (
           <S.LinkWrapper key={social.name} href={social.url}>
-            {social.icon}
+            <S.IconWrapper
+              whileHover={{
+                scale: 1.1,
+                translateY: "-4px",
+                transition: {
+                  duration: 0.4,
+                },
+              }}
+            >
+              {social.icon}
+            </S.IconWrapper>
           </S.LinkWrapper>
         ))}
       </S.SocialMediaIconsWrapper>

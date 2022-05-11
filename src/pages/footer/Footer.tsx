@@ -1,5 +1,6 @@
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { SocialMedias } from "../../components/socialMedias/SocialMedias";
 import * as S from "./Footer.styled";
 
 export const Footer = () => {
@@ -23,7 +24,11 @@ export const Footer = () => {
       }}
       animate={animationControl}
     >
-      Footer
+      <SocialMedias />
+      <S.CopyrightText>
+        Michał Żygiel
+        <S.Year>©2022</S.Year>.
+      </S.CopyrightText>
     </S.FooterWrapper>
   );
 };

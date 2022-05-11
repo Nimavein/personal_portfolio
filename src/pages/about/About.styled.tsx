@@ -50,18 +50,56 @@ export const DescriptionHeader = styled(motion.h3)`
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.05em;
 `;
-export const Description = styled(motion.p)``;
+export const Description = styled(motion.p)`
+  line-height: 20px;
+`;
 
 export const SkillsWrapper = styled(DescriptionWrapper)``;
+
+export const SkillsIconsWrapper = styled.div`
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+`;
+
+export const SkillName = styled(motion.p)`
+  line-height: 20px;
+`;
+
+export const IconWrapper = styled(motion.div)`
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  svg {
+    color: ${({ theme }) => theme.color.white};
+    transition: all ease-in-out 0.3s;
+    font-size: 30px;
+  }
+  &:hover {
+    cursor: default;
+    color: ${({ theme }) => theme.color.primary};
+
+    svg {
+      color: ${({ theme }) => theme.color.primary};
+    }
+  }
+`;
+
 export const ExperienceWrapper = styled(DescriptionWrapper)`
   .ant-tabs {
     background: ${({ theme }) => theme.color.darkGrey};
     color: ${({ theme }) => theme.color.white};
     padding: 20px 0;
+    .ant-tabs-tab {
+      font-weight: 600;
+    }
     .ant-tabs-tab:hover,
     .ant-tabs-tab-btn:focus,
     .ant-tabs-tab-remove:focus,
@@ -78,7 +116,14 @@ export const ExperienceWrapper = styled(DescriptionWrapper)`
 `;
 
 export const ExperienceDescription = styled.p``;
+export const ExperiencePosition = styled.p`
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+`;
 export const ExperienceDate = styled.p`
+  font-weight: 600;
   color: ${({ theme }) => theme.color.greyLight};
   margin-bottom: 12px;
 `;

@@ -35,5 +35,5 @@ export const Separator = styled.hr<{ $textColor?: string }>`
   width: 50px;
   border: 2px solid
     ${({ $textColor, theme }) => $textColor || theme.color.black};
-  margin: 0 auto 36px auto;
+  margin: 0 auto 46px auto;
 `;

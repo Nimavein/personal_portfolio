@@ -14,6 +14,7 @@ export const Button = styled.button<{ $isBlack?: boolean }>`
   cursor: pointer;
   border: none;
   transition: all 0.3s ease-in 1.2s;
+  text-transform: uppercase;
 
   &:hover {
     background: transparent;

@@ -11,8 +11,8 @@ export const Projects = () => {
     <SectionWrapper backgroundColor={theme.color.greyLight} title="Projects">
       <S.ProjectsWrapper>
         {projects.map((project: ProjectType) => (
-          <LazyLoadComponent>
-            <Project key={project.name} {...project} />
+          <LazyLoadComponent key={project.name}>
+            <Project {...project} />
           </LazyLoadComponent>
         ))}
       </S.ProjectsWrapper>

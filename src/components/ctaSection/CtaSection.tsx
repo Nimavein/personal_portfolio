@@ -26,7 +26,7 @@ export const CtaSection = () => {
       }}
       animate={animationControl}
     >
-      <S.CtaText>Do you want to talk about ...</S.CtaText>
+      <S.CtaText> Have a question or want to work together?</S.CtaText>
       <Link to="Contact" spy={true} smooth={true}>
         <Button type="button">Contact me!</Button>
       </Link>
