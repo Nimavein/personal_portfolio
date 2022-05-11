@@ -7,18 +7,18 @@ import { Skills } from "./skills/Skills";
 type AboutProps = {};
 
 export const About = ({}: AboutProps) => {
-  
   return (
     <SectionWrapper title="About">
-    <S.ColumnsWrapper>
-         <S.LeftColumn>
-        <Description />
-     </S.LeftColumn>
-     <S.RightColumn>
-        <Skills />
-        <Experience />
-     </S.RightColumn>
-    </S.ColumnsWrapper>
+      <S.SectionsWrapper>
+        <S.TopSection>
+          <S.ImageWrapper></S.ImageWrapper>
+          <Description />
+        </S.TopSection>
+        <S.BottomSection>
+          <Skills />
+          <Experience />
+        </S.BottomSection>
+      </S.SectionsWrapper>
     </SectionWrapper>
   );
 };

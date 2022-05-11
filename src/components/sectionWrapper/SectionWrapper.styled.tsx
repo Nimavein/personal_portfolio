@@ -5,7 +5,6 @@ export const PageWrapper = styled(motion.section)<{
   $backgroundColor?: string;
   $textColor?: string;
 }>`
-  margin: 0 auto;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -14,7 +13,7 @@ export const PageWrapper = styled(motion.section)<{
   color: ${({ $textColor, theme }) => $textColor || theme.color.black};
   background-color: ${({ $backgroundColor }) => $backgroundColor};
   @media ${({ theme }) => theme.medias.mobile} {
-    padding: 20px;
+    padding: 40px 20px;
   }
 `;
 

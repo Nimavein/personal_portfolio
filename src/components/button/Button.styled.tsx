@@ -1,21 +1,24 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
-  padding: 6px 36px;
-  background: #ecf0f1;
+export const Button = styled.button<{ $isBlack?: boolean }>`
+  padding: 6px 42px;
+  color: ${({ $isBlack, theme }) =>
+    $isBlack ? theme.color.white : theme.color.black};
   position: relative;
-  color: #333;
+  background: ${({ $isBlack, theme }) =>
+    $isBlack ? theme.color.black : theme.color.white};
   text-align: center;
   line-height: 40px;
   font-size: 18px;
-  font-family: "Lato", sans-serif;
   font-weight: 600;
   cursor: pointer;
+  border: none;
   transition: all 0.3s ease-in 1.2s;
 
   &:hover {
     background: transparent;
-    color: #fff;
+    color: ${({ $isBlack, theme }) =>
+      $isBlack ? theme.color.black : theme.color.white};
     transition: all 0.3s ease-in;
   }
 
@@ -25,7 +28,8 @@ export const Button = styled.button`
     height: 2px;
     width: 0%;
     left: 0px;
-    background: #fff;
+    background: ${({ $isBlack, theme }) =>
+      $isBlack ? theme.color.black : theme.color.white};
     transition: all 0.4s ease 0.8s;
   }
 
@@ -35,14 +39,16 @@ export const Button = styled.button`
     position: absolute;
     top: 0px;
     right: 0px;
-    background: #fff;
+    background: ${({ $isBlack, theme }) =>
+      $isBlack ? theme.color.black : theme.color.white};
     transition: all 0.4s ease 0.2s;
   }
 
   .left-bar {
     height: 0%;
     width: 2px;
-    background: #fff;
+    background: ${({ $isBlack, theme }) =>
+      $isBlack ? theme.color.black : theme.color.white};
     position: absolute;
     left: 0px;
     top: 0px;
@@ -52,7 +58,8 @@ export const Button = styled.button`
   .right-bar {
     height: 0%;
     width: 2px;
-    background: #fff;
+    background: ${({ $isBlack, theme }) =>
+      $isBlack ? theme.color.black : theme.color.white};
     position: absolute;
     right: 0px;
     bottom: 0px;

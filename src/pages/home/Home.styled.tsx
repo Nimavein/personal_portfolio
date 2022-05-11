@@ -11,7 +11,7 @@ export const Wrapper = styled(motion.section)`
   font-size: 42px;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   @media ${({ theme }) => theme.medias.mobile} {
     font-size: 26px;
