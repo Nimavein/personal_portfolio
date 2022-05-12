@@ -80,6 +80,7 @@ export const ContactMethods = styled.div`
   gap: 30px;
   @media ${({ theme }) => theme.medias.mobile} {
     width: 100%;
+    align-items: center;
   }
 `;
 
@@ -87,6 +88,9 @@ export const MethodWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  @media ${({ theme }) => theme.medias.mobile} {
+    align-items: center;
+  }
 `;
 
 export const IconWithMethodName = styled.div`
