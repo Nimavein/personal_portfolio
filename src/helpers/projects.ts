@@ -21,8 +21,8 @@ export const projects: ProjectType[] = [
   {
     name: "Portfolio",
     imgUrl: "/portfolio.png",
-    siteLink: "https://main--gregarious-chebakia-eb84f9.netlify.app/",
-    githubLink: "https://github.com/masterborn/master-program-ikss-a",
+    siteLink: "https://michalzygiel.netlify.app/",
+    githubLink: "https://github.com/Nimavein/personal_portfolio",
   },
   {
     name: "Spacex",
