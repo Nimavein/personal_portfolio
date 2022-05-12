@@ -56,17 +56,21 @@ export const Navbar = () => {
               animate={isVisible ? "open" : "closed"}
               variants={variants}
             >
-              {sections.map((section: string) => (
-                <S.Link
-                  onClick={toogleVisibility}
-                  key={section}
-                  to={section}
-                  spy={true}
-                  smooth={true}
-                >
-                  {section}
-                </S.Link>
-              ))}
+              {isVisible && (
+                <>
+                  {sections.map((section: string) => (
+                    <S.Link
+                      onClick={toogleVisibility}
+                      key={section}
+                      to={section}
+                      spy={true}
+                      smooth={true}
+                    >
+                      {section}
+                    </S.Link>
+                  ))}
+                </>
+              )}
             </S.MobileLinksWrapper>
           </>
         )}
