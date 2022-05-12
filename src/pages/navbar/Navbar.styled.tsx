@@ -28,6 +28,10 @@ export const Link = styled(ReactScrollLink)`
   }
 `;
 
+export const MobileLink = styled(Link)<{ isVisible?: boolean }>`
+  display: ${({ isVisible }) => (isVisible ? "visible" : "none")};
+`;
+
 export const LinksWrapper = styled(motion.div)`
   display: flex;
   gap: 20px;

@@ -23,7 +23,7 @@ export const Navbar = () => {
   }
 
   const variants = {
-    open: { opacity: 1, x: 0 },
+    open: { opacity: 1, x: 0, height: "fit-content" },
     closed: { opacity: 0, x: "-100%", height: 0 },
   };
 
@@ -56,21 +56,18 @@ export const Navbar = () => {
               animate={isVisible ? "open" : "closed"}
               variants={variants}
             >
-              {isVisible && (
-                <>
-                  {sections.map((section: string) => (
-                    <S.Link
-                      onClick={toogleVisibility}
-                      key={section}
-                      to={section}
-                      spy={true}
-                      smooth={true}
-                    >
-                      {section}
-                    </S.Link>
-                  ))}
-                </>
-              )}
+              {sections.map((section: string) => (
+                <S.MobileLink
+                  isVisible={isVisible}
+                  onClick={toogleVisibility}
+                  key={section}
+                  to={section}
+                  spy={true}
+                  smooth={true}
+                >
+                  {section}
+                </S.MobileLink>
+              ))}
             </S.MobileLinksWrapper>
           </>
         )}
