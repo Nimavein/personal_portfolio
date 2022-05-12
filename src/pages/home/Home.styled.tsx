@@ -20,7 +20,6 @@ export const Wrapper = styled(motion.section)`
 export const IntroductionText = styled.p`
   text-align: center;
   z-index: 2;
-
   color: ${({ theme }) => theme.color.white};
 `;
 

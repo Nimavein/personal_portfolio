@@ -16,6 +16,12 @@ export const Button = styled.button<{ $isBlack?: boolean }>`
   transition: all 0.3s ease-in 1.2s;
   text-transform: uppercase;
 
+  @media ${({ theme }) => theme.medias.mobile} {
+    font-size: 16px;
+    padding: 6px 36px;
+    line-height: 36px;
+  }
+
   &:hover {
     background: transparent;
     color: ${({ $isBlack, theme }) =>
