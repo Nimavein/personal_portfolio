@@ -10,7 +10,7 @@ export const experience = [
         description="Learned more about the Fintech and Blockchain environment. Developed web applications by
 building the frontend and integrating it with the blockchain and backend using mainly ReactJS,
 JavaScipt, TypeScript and Redux."
-        date="12.2021 - current"
+        date="12.2021 - present"
       />
     ),
   },
