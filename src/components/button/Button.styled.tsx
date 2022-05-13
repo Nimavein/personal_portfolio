@@ -11,6 +11,7 @@ export const Button = styled.button<{ $isBlack?: boolean }>`
   line-height: 40px;
   font-size: 18px;
   font-weight: 600;
+
   cursor: pointer;
   border: none;
   transition: all 0.3s ease-in 1.2s;

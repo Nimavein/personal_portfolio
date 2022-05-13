@@ -22,18 +22,22 @@ export const TopSection = styled(motion.div)`
 export const BottomSection = styled(TopSection)``;
 
 export const ImageWrapper = styled.div`
-  height: 300px;
+  border-radius: 20px;
   width: 50%;
-  background-color: ${({ theme }) => theme.color.darkGrey};
-  border-radius: 50%;
-  align-self: center;
-  margin-bottom: 36px;
+  display: flex;
+  justify-content: center;
   @media ${({ theme }) => theme.medias.mobile} {
     width: 100%;
   }
 `;
 
+export const Avatar = styled.img`
+  height: 100%;
+  object-fit: cover;
+`;
+
 export const DescriptionWrapper = styled.div`
+  border-radius: 20px;
   background-color: ${({ theme }) => theme.color.darkGrey};
   color: ${({ theme }) => theme.color.white};
   padding: 40px;

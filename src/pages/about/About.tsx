@@ -9,7 +9,9 @@ export const About = () => {
     <SectionWrapper title="About">
       <S.SectionsWrapper>
         <S.TopSection>
-          <S.ImageWrapper></S.ImageWrapper>
+          <S.ImageWrapper>
+            <S.Avatar src="/avatar.png" />
+          </S.ImageWrapper>
           <Description />
         </S.TopSection>
         <S.BottomSection>

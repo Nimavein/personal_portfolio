@@ -5,11 +5,13 @@ export const ProjectWrapper = styled(motion.div)`
   width: 100%;
   box-shadow: ${({ theme }) => theme.color.boxShadow};
   position: relative;
+  border-radius: 10px;
 `;
 
 export const ProjectImage = styled(motion.img)`
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 `;
 
 export const TitleWrapper = styled(motion.div)`
@@ -24,6 +26,7 @@ export const TitleWrapper = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px 10px 0 0;
 `;
 
 export const LinksWrapper = styled(motion.div)`
@@ -40,6 +43,7 @@ export const LinksWrapper = styled(motion.div)`
   justify-content: center;
   bottom: 0;
   gap: 20px;
+  border-radius: 0 0 10px 10px;
 `;
 
 export const LinkWrapper = styled.a`

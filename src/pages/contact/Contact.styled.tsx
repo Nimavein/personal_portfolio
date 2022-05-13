@@ -34,6 +34,7 @@ export const Name = styled.input`
   height: 30px;
   color: ${({ theme }) => theme.color.black};
   text-indent: 8px;
+  border-radius: 6px;
   &:focus {
     outline-style: none;
     box-shadow: none;
@@ -42,6 +43,7 @@ export const Name = styled.input`
 `;
 export const Mail = styled(Name)``;
 export const Message = styled.textarea`
+  border-radius: 6px;
   width: 100%;
   height: 120px;
   background-color: ${({ theme }) => theme.color.white};
