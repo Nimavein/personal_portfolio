@@ -13,6 +13,12 @@ export const projects: ProjectType[] = [
     githubLink: "https://github.com/masterborn/master-program-ikss-a",
   },
   {
+    name: "Filmweb clone",
+    imgUrl: "/filmweb-clone.png",
+    siteLink: "https://filmweb-clone.vercel.app/movies",
+    githubLink: "https://github.com/Nimavein/filmweb-clone",
+  },
+  {
     name: "Store",
     imgUrl: "/store.png",
     siteLink: "https://keen-tereshkova-0d5eb5.netlify.app/",
@@ -24,13 +30,6 @@ export const projects: ProjectType[] = [
     siteLink: "https://michalzygiel.netlify.app/",
     githubLink: "https://github.com/Nimavein/personal_portfolio",
   },
-  {
-    name: "Spacex",
-    imgUrl: "/spacex.png",
-    siteLink: "https://peaceful-tesla-31b089.netlify.app/",
-    githubLink: "https://github.com/Nimavein/spacex",
-  },
-
   {
     name: "Exchanger",
     imgUrl: "/exchanger.png",

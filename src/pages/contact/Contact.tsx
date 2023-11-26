@@ -20,10 +20,7 @@ export const Contact = () => {
   const { register, handleSubmit, reset } = useForm<FormDataType>();
 
   useEffect(() => {
-    let submitSuccessfulTimer = setTimeout(
-      () => setIsSubmitSuccessful(false),
-      4000
-    );
+    let submitSuccessfulTimer = setTimeout(() => setIsSubmitSuccessful(false), 4000);
     return () => {
       clearTimeout(submitSuccessfulTimer);
     };
@@ -56,28 +53,38 @@ export const Contact = () => {
           <S.FormDivider />
           <S.StyledContactForm onSubmit={handleSubmit(onSubmit)}>
             <S.NameAndMail>
-              <S.Name
-                placeholder="Enter your name"
-                {...register("name")}
-                required
-              />
-              <S.Mail
-                placeholder="Enter your e-mail"
-                type="email"
-                {...register("email")}
-                required
-                name="email"
-              />
+              <S.FormFieldWrapper>
+                <S.FormFieldLabel htmlFor="name-field">Name:</S.FormFieldLabel>
+                <S.Name
+                  placeholder="Enter your name..."
+                  {...register("name")}
+                  id="name-field"
+                  required
+                />
+              </S.FormFieldWrapper>
+              <S.FormFieldWrapper>
+                <S.FormFieldLabel htmlFor="email-field">E-mail:</S.FormFieldLabel>
+                <S.Mail
+                  placeholder="Enter your e-mail..."
+                  type="email"
+                  {...register("email")}
+                  required
+                  name="email"
+                  id="email-field"
+                />
+              </S.FormFieldWrapper>
             </S.NameAndMail>
-            <S.Message
-              placeholder="Enter your message..."
-              {...register("message")}
-              name="message"
-              required
-            />
-            <Button type="submit">
-              {isSubmitSuccessful ? "Message Sent" : "Send"}
-            </Button>
+            <S.FormFieldWrapper>
+              <S.FormFieldLabel htmlFor="message-field">Message:</S.FormFieldLabel>
+              <S.Message
+                placeholder="Enter your message..."
+                {...register("message")}
+                name="message"
+                required
+                id="message-field"
+              />
+            </S.FormFieldWrapper>
+            <Button type="submit">{isSubmitSuccessful ? "Message Sent" : "Send"}</Button>
           </S.StyledContactForm>
         </S.ContactFormWrapper>
         <S.ContactMethods>
@@ -85,9 +92,7 @@ export const Contact = () => {
             <S.IconWithMethodName>
               <MailOutlined /> <S.MethodName>E-mail</S.MethodName>
             </S.IconWithMethodName>
-            <S.Email href="mailto:michalzygiel00@gmail.com">
-              michalzygiel00@gmail.com
-            </S.Email>
+            <S.Email href="mailto:michalzygiel00@gmail.com">michalzygiel00@gmail.com</S.Email>
           </S.MethodWrapper>
           <S.MethodWrapper>
             <S.IconWithMethodName>

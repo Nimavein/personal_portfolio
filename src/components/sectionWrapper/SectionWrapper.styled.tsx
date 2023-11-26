@@ -19,7 +19,7 @@ export const PageWrapper = styled(motion.section)<{
   }
 `;
 
-export const Title = styled.p<{ $textColor?: string }>`
+export const Title = styled.h2<{ $textColor?: string }>`
   margin-bottom: 20px;
   font-size: 36px;
   text-align: center;

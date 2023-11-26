@@ -23,17 +23,24 @@ export const BottomSection = styled(TopSection)``;
 
 export const ImageWrapper = styled.div`
   border-radius: 20px;
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: center;
+  max-height: 500px;
+
+  @media ${({ theme }) => theme.medias.medium} {
+    width: 50%;
+  }
+
   @media ${({ theme }) => theme.medias.mobile} {
     width: 100%;
   }
 `;
 
 export const Avatar = styled.img`
-  height: 100%;
   object-fit: cover;
+  border-radius: 20px;
+  width: 100%;
 `;
 
 export const DescriptionWrapper = styled.div`
@@ -41,7 +48,11 @@ export const DescriptionWrapper = styled.div`
   background-color: ${({ theme }) => theme.color.darkGrey};
   color: ${({ theme }) => theme.color.white};
   padding: 40px;
-  width: 50%;
+  width: 70%;
+
+  @media ${({ theme }) => theme.medias.medium} {
+    width: 50%;
+  }
 
   @media ${({ theme }) => theme.medias.mobile} {
     width: 100%;

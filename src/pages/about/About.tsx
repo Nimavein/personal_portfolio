@@ -10,7 +10,7 @@ export const About = () => {
       <S.SectionsWrapper>
         <S.TopSection>
           <S.ImageWrapper>
-            <S.Avatar src="/avatar.png" />
+            <S.Avatar src="/cv-image.jpg" alt="Michał's image" />
           </S.ImageWrapper>
           <Description />
         </S.TopSection>

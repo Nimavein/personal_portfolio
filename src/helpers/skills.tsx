@@ -1,4 +1,5 @@
-import { FaSass, FaReact } from "react-icons/fa";
+import { FaSass, FaReact, FaLess } from "react-icons/fa";
+import { IoAccessibility } from "react-icons/io5";
 import {
   SiRedux,
   SiCss3,
@@ -10,6 +11,10 @@ import {
   SiBootstrap,
   SiStyledcomponents,
   SiNextdotjs,
+  SiSwr,
+  SiFigma,
+  SiJquery,
+  SiJest,
 } from "react-icons/si";
 
 export type SkillType = {
@@ -35,8 +40,16 @@ export const skills: SkillType[] = [
     icon: <SiJavascript />,
   },
   {
+    name: "JQuery",
+    icon: <SiJquery />,
+  },
+  {
     name: "Redux",
     icon: <SiRedux />,
+  },
+  {
+    name: "SWR",
+    icon: <SiSwr />,
   },
   {
     name: "CSS3",
@@ -51,8 +64,16 @@ export const skills: SkillType[] = [
     icon: <SiStyledcomponents />,
   },
   {
+    name: "Jest",
+    icon: <SiJest />,
+  },
+  {
     name: "Sass",
     icon: <FaSass />,
+  },
+  {
+    name: "Less",
+    icon: <FaLess />,
   },
   {
     name: "Git",
@@ -65,5 +86,13 @@ export const skills: SkillType[] = [
   {
     name: "Jira",
     icon: <SiJira />,
+  },
+  {
+    name: "Figma",
+    icon: <SiFigma />,
+  },
+  {
+    name: "Accessibility",
+    icon: <IoAccessibility />,
   },
 ];

@@ -8,7 +8,7 @@ export const Experience = () => {
   return (
     <S.ExperienceWrapper>
       <S.DescriptionHeader>Experience</S.DescriptionHeader>
-      <Tabs tabPosition="left">
+      <Tabs tabPosition="top">
         {experience.map((tab) => (
           <TabPane key={tab.key} tab={tab.name}>
             {tab.component}

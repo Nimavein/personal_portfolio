@@ -27,8 +27,20 @@ export const NameAndMail = styled.div`
   margin-bottom: 20px;
 `;
 
+export const FormFieldLabel = styled.label`
+  color: ${({ theme }) => theme.color.white};
+  font-size: 14px;
+`;
+
+export const FormFieldWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+`;
+
 export const Name = styled.input`
-  width: 50%;
+  width: 100%;
   background-color: ${({ theme }) => theme.color.white};
   border: none;
   height: 30px;
